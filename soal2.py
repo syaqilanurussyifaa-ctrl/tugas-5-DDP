@@ -1,23 +1,6 @@
-print("Program Menghitung Luas Bangun Datar")
-print("1. Persegi")
-print("2. Lingkaran")
-print("3. Segitiga")
+# 1 + 3 + 5 + 7 +9 +11 +13 + 15 +17 +19 
 
-hitung = int(input("Memilih Program (1/2/3): "))
-
-match hitung:
-    case 1:
-        sisi = float(input("Masukkan Panjang sisi:"))
-        luas = sisi * sisi
-        print(luas)
-    case 2:
-        r = float(input("Masukkan jari-jari lingkaran: "))
-        luas = 3.14 * r * r
-        print(luas)
-    case 3:
-        alas = float(input("Masukkan alas segitiga: "))
-        tinggi = float(input("Masukkan tinggi segitiga: "))
-        luas = 0.5 * alas * tinggi
-        print(luas)
-    case _:
-        print("SALAH PILIH!")
+total = 0
+for i in range(1, 20, 2):
+    total += i
+print("Hasil = ", total)
